@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BlastX
+Comment=BlastX P2P Cryptocurrency
+Comment[fr]=BlastX, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BlastX, eşten eşe kriptografik sanal para birimi
+Exec=blastx-qt %u
+Terminal=false
+Type=Application
+Icon=blastx128
+MimeType=x-scheme-handler/blastx;
+Categories=Office;Finance;
