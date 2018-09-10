@@ -41,7 +41,7 @@ The following are developer notes on how to build BlastX on your native platform
 
 Development
 ---------------------
-The BlastX repo's [root README](https://github.com/BlastX-Core-Core/BlastX/blob/master/README.md) contains relevant information on the development process and automated testing.
+The BlastX repo's [root README](https://github.com/BlastX-Core/BlastX/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)

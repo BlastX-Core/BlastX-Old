@@ -44,7 +44,7 @@ Instructions: Homebrew
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/BlastX-Core-Core/BlastX.git
+        git clone https://github.com/BlastX-Core/BlastX.git
         cd BlastX
 
 2.  Build blastxd:

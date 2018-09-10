@@ -2,7 +2,7 @@
 
 BlastX Core version *version* is now available from:
 
-  <https://github.com/BlastX-Core-Core/BlastX/releases>
+  <https://github.com/BlastX-Core/BlastX/releases>
 
 Please report bugs using the issue tracker at github:
 

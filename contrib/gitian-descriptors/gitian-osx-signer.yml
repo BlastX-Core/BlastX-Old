@@ -7,7 +7,7 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/BlastX-Core-Core/BlastX-detached-sigs.git"
+- "url": "https://github.com/BlastX-Core/BlastX-detached-sigs.git"
   "dir": "signature"
 files:
 - "blastx-osx-unsigned.tar.gz"

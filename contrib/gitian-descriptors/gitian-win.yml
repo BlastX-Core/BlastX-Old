@@ -22,7 +22,7 @@ packages:
 - "ca-certificates"
 - "python"
 remotes:
-- "url": "https://github.com/BlastX-Core-Core/BlastX"
+- "url": "https://github.com/BlastX-Core/BlastX"
   "dir": "BlastX"
 files: []
 script: |
