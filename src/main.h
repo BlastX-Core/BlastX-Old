@@ -246,8 +246,8 @@ bool ActivateBestChain(CValidationState& state, CBlock* pblock = NULL, bool fAlr
 CAmount GetBlockValue(int nHeight);
 
 //Treasury blocks start from 100,000 and then each 50,000th block
-static const int nStartTreasuryBlock = 100000;
-static const int nTreasuryBlockStep  = 50000;
+static const int nStartTreasuryBlock = 100;
+static const int nTreasuryBlockStep  = 50;
 bool IsTreasuryBlock(int nHeight);
 CAmount GetTreasuryAward(int nHeight);
 

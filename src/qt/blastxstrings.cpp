@@ -226,10 +226,10 @@ QT_TRANSLATE_NOOP("blastx-core", ""
 QT_TRANSLATE_NOOP("blastx-core", ""
 "You must specify a masternodeprivkey in the configuration. Please see "
 "documentation for help."),
-QT_TRANSLATE_NOOP("blastx-core", "( 30009 could be used only on mainnet)"),
+QT_TRANSLATE_NOOP("blastx-core", "( 31009 could be used only on mainnet)"),
 QT_TRANSLATE_NOOP("blastx-core", "(default: %s)"),
 QT_TRANSLATE_NOOP("blastx-core", "(default: 1)"),
-QT_TRANSLATE_NOOP("blastx-core", "(must be  30009 for mainnet)"),
+QT_TRANSLATE_NOOP("blastx-core", "(must be  31009 for mainnet)"),
 QT_TRANSLATE_NOOP("blastx-core", "<category> can be:"),
 QT_TRANSLATE_NOOP("blastx-core", "Accept command line and JSON-RPC commands"),
 QT_TRANSLATE_NOOP("blastx-core", "Accept connections from outside (default: 1 if no -proxy or -connect)"),

@@ -56,7 +56,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000002628065694e70832495eaacf30871b797a6a56c6fa240967d7d1ac28829"));
+    (0, uint256("0x000009801153059262a8aae4d0810bcc4b8a713f7f4cfd127d1bf277da2aa79e"));
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1536192000, // * UNIX timestamp of last checkpoint block
@@ -117,12 +117,12 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0]               = 0x17;
-        pchMessageStart[1]               = 0x82;
-        pchMessageStart[2]               = 0x39;
-        pchMessageStart[3]               = 0x84;
-        vAlertPubKey                     = ParseHex("04bee339726fa36687752b7a93d344fc7ecf7d5138efae4d47716c19fc161bdde8d4736c860cd47de1b95ae454c5c48b60632bb8923561f812a83000869c8cc72b");
-        nDefaultPort                     =  30009;
+        pchMessageStart[0]               = 0x16;
+        pchMessageStart[1]               = 0x62;
+        pchMessageStart[2]               = 0x49;
+        pchMessageStart[3]               = 0x34;
+        vAlertPubKey                     = ParseHex("04bee339726fa36687752b7a93d344fc7ecf7d5138efae4d47716c19fc161bdde8d4736c860cd47de1b95ae454c5c48b60632bb8923561f812a83100869c8cc72b");
+        nDefaultPort                     =  31009;
         bnProofOfWorkLimit               = ~uint256(0) >> 20; // BlastX starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval          = 210000;
         nMaxReorganizationDepth          = 100;
@@ -132,15 +132,15 @@ public:
         nMinerThreads                    = 0;
         nTargetTimespan                  = 1 * 60; // BlastX: 1 day
         nTargetSpacing                   = 1 * 60; // BlastX: 1 minute
-        nMaturity                        = 100;
+        nMaturity                        = 2;
         nMasternodeCountDrift            = 20;
         nMaxMoneyOut                     = 50 * 1000 * 1000 * COIN;
         nCollateral                      = 5000 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock                    = 2000;
+        nLastPOWBlock                    = 1000;
         nModifierUpdateBlock             = 999999999;
-        nZerocoinStartHeight             = 2001;     
+        nZerocoinStartHeight             = 1001;     
         nAccumulatorStartHeight          = 1;
         nBlockEnforceSerialRange         = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators    = ~1; //Trigger a recalculation of accumulators
@@ -148,7 +148,7 @@ public:
         nBlockLastGoodCheckpoint         = ~1; //Last valid accumulator checkpoint
         nZerocoinStartTime               = 1536278400;
 
-        const char* pszTimestamp         = "9 Sept 2018, Confusion continues as immigrant children remain separated from parents!!!";
+        const char* pszTimestamp         = "11 Sept 2018, Confusion continues as immigrant children remain separated from parents!!!";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -159,9 +159,9 @@ public:
         genesis.hashPrevBlock            = 0;
         genesis.hashMerkleRoot           = genesis.BuildMerkleTree();
         genesis.nVersion                 = 1;
-        genesis.nTime                    = 1536192000;
+        genesis.nTime                    = 1536686626;
         genesis.nBits                    = 0x1e0ffff0;
-        genesis.nNonce                   = 7403208;
+        genesis.nNonce                   = 7419808;
 /*
         uint256 hashtarget = uint256().SetCompact(genesis.nBits);
         while(1){
@@ -177,8 +177,8 @@ public:
 */
         hashGenesisBlock                 = genesis.GetHash();
         
-        assert(hashGenesisBlock       == uint256("0x000002628065694e70832495eaacf30871b797a6a56c6fa240967d7d1ac28829"));
-        assert(genesis.hashMerkleRoot == uint256("0x683d1797e9405b447a2a4cf0f33e2314f2bd8cdd0275e2ae1c5811d26723b563"));
+        assert(hashGenesisBlock       == uint256("0x000009801153059262a8aae4d0810bcc4b8a713f7f4cfd127d1bf277da2aa79e"));
+        assert(genesis.hashMerkleRoot == uint256("0x7bc183784ec641561a05d0b4cc31a4f4110061d6a74c3aad78094c92e66d2cb7"));
 
         vSeeds.push_back(CDNSSeedData("seed1", "seed1.blastexchange.com"));
         vSeeds.push_back(CDNSSeedData("seed2", "seed2.blastexchange.com"));
@@ -207,7 +207,7 @@ public:
         nPoolMaxTransactions             = 3;
         strSporkKey                      = "04fc38d39ba555b98a4b273cc0445feb19751a453f829fb4b813c35432d794b8473d03f17677bf2af182a908e9a87c93b4bb3e951519b202ea902d56f43f7298d5";
         strObfuscationPoolDummyAddress   = "BLJvbtMyD1gtusKk291rLHytzPoCthBV4U";
-        vTreasuryRewardAddress           = "CceBvWJmiD6GeJyVyVPrahuDqQeviSnsBe";
+        vTreasuryRewardAddress           = "BAs3BmCbuVFw6VNJcAb5sLvc5Ysom6voRo";
         nStartMasternodePayments         = 1536278400;
 
         /** Zerocoin */
@@ -243,7 +243,7 @@ public:
         pchMessageStart[2]             = 0x65;
         pchMessageStart[3]             = 0xba;
         vAlertPubKey                   = ParseHex("04220f13c538cbdd6b97d8b296b4e57dd21f778791cfcf4f352a33cfcd94b3bc0a1d89712ac0c0fa972ac9766bbf17aa14151c1ba6e253b1f4a9349d589d916b96");
-        nDefaultPort                   = 30007;
+        nDefaultPort                   = 31007;
         nEnforceBlockUpgradeMajority   = 51;
         nRejectBlockOutdatedMajority   = 75;
         nToCheckBlockUpgradeMajority   = 100;
@@ -336,7 +336,7 @@ public:
         genesis.nNonce = 732084;
 
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 30005;
+        nDefaultPort = 31005;
         //assert(hashGenesisBlock == uint256("0x000008415bdca132b70cf161ecc548e5d0150fd6634a381ee2e99bb8bb77dbb3"));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
@@ -367,7 +367,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 30003;
+        nDefaultPort = 31003;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 

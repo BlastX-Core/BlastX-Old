@@ -3490,8 +3490,8 @@ https://www.transifex.com/blastx-project/blastx-project-translations</translatio
         <translation>Você deve especificar uma masternodeprivkey na configuração. Favor verificar o manual para obter ajuda.</translation>
     </message>
     <message>
-        <source>( 30009 could be used only on mainnet)</source>
-        <translation>( 30009 could be used only on mainnet)</translation>
+        <source>( 31009 could be used only on mainnet)</source>
+        <translation>( 31009 could be used only on mainnet)</translation>
     </message>
     <message>
         <source>(default: %s)</source>
@@ -3502,8 +3502,8 @@ https://www.transifex.com/blastx-project/blastx-project-translations</translatio
         <translation>(padrão: 1)</translation>
     </message>
     <message>
-        <source>(must be  30009 for mainnet)</source>
-        <translation>(deve ser  30009 para mainnet)</translation>
+        <source>(must be  31009 for mainnet)</source>
+        <translation>(deve ser  31009 para mainnet)</translation>
     </message>
     <message>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
