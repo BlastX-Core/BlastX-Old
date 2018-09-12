@@ -6256,7 +6256,7 @@ int ActiveProtocol()
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }
 
-int ActiveCollateral()
+CAmount ActiveCollateral()
 {
     return Params().Collateral();
 }
