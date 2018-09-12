@@ -122,7 +122,7 @@ public:
         pchMessageStart[2]               = 0x49;
         pchMessageStart[3]               = 0x34;
         vAlertPubKey                     = ParseHex("04bee339726fa36687752b7a93d344fc7ecf7d5138efae4d47716c19fc161bdde8d4736c860cd47de1b95ae454c5c48b60632bb8923561f812a83100869c8cc72b");
-        nDefaultPort                     =  31009;
+        nDefaultPort                     = 32009;
         bnProofOfWorkLimit               = ~uint256(0) >> 20; // BlastX starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval          = 210000;
         nMaxReorganizationDepth          = 100;
@@ -207,7 +207,7 @@ public:
         nPoolMaxTransactions             = 3;
         strSporkKey                      = "04fc38d39ba555b98a4b273cc0445feb19751a453f829fb4b813c35432d794b8473d03f17677bf2af182a908e9a87c93b4bb3e951519b202ea902d56f43f7298d5";
         strObfuscationPoolDummyAddress   = "BLJvbtMyD1gtusKk291rLHytzPoCthBV4U";
-        vTreasuryRewardAddress           = "BAs3BmCbuVFw6VNJcAb5sLvc5Ysom6voRo";
+        vTreasuryRewardAddress           = "BRgU6Xkxu2AyYgcL3gJm2HygYyg5ABK1rS" /*"BAs3BmCbuVFw6VNJcAb5sLvc5Ysom6voRo"*/;
         nStartMasternodePayments         = 1536278400;
 
         /** Zerocoin */
