@@ -423,7 +423,7 @@ void CMasternodeMan::DsegUpdate(CNode* pnode)
         if (!(pnode->addr.IsRFC1918() || pnode->addr.IsLocal())) {
             std::map<CNetAddr, int64_t>::iterator it = mWeAskedForMasternodeList.find(pnode->addr);
             if (it != mWeAskedForMasternodeList.end()) {
-                if (GetTime() < (*it).second) {
+                if (GetTime() < (*it).second && chainActive.Height() > 1000) {
                     LogPrint("masternode", "dseg - we already asked peer %i for the list; skipping...\n", pnode->GetId());
                     return;
                 }
@@ -810,7 +810,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
                 std::map<CNetAddr, int64_t>::iterator i = mAskedUsForMasternodeList.find(pfrom->addr);
                 if (i != mAskedUsForMasternodeList.end()) {
                     int64_t t = (*i).second;
-                    if (GetTime() < t) {
+                    if (GetTime() < t &&  && chainActive.Height() > 1000) {
                         Misbehaving(pfrom->GetId(), 34);
                         LogPrint("masternode","dseg - peer already asked me for the list\n");
                         return;
@@ -987,7 +987,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
 
         CValidationState state;
         CMutableTransaction tx = CMutableTransaction();
-        CTxOut vout = CTxOut(29999.99 * COIN, obfuScationPool.collateralPubKey);
+        CTxOut vout = CTxOut(4999.99 * COIN, obfuScationPool.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 

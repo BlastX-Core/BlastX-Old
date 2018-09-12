@@ -1009,7 +1009,7 @@ void CBudgetManager::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
 
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
             if (nProp == 0) {
-                if (pfrom->HasFulfilledRequest("mnvs")) {
+                if (pfrom->HasFulfilledRequest("mnvs") && chainActive.Height() > 1000) {
                     LogPrint("masternode","mnvs - peer already asked me for the list\n");
                     Misbehaving(pfrom->GetId(), 20);
                     return;

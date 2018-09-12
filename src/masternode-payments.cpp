@@ -396,7 +396,7 @@ void CMasternodePayments::ProcessMessageMasternodePayments(CNode* pfrom, std::st
         vRecv >> nCountNeeded;
 
         if (Params().NetworkID() == CBaseChainParams::MAIN) {
-            if (pfrom->HasFulfilledRequest("mnget")) {
+            if (pfrom->HasFulfilledRequest("mnget") && chainActive.Height() > 1000) {
                 LogPrint("masternode","mnget - peer already asked me for the list\n");
                 Misbehaving(pfrom->GetId(), 20);
                 return;
