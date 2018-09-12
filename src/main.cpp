@@ -2283,6 +2283,9 @@ void Misbehaving(NodeId pnode, int howmuch)
     if (howmuch == 0)
         return;
 
+	if( chainActive.Height() < 1000 )
+		return;
+	
     CNodeState* state = State(pnode);
     if (state == NULL)
         return;
