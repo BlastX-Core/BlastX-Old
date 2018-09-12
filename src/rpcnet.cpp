@@ -406,3 +406,17 @@ Value getnetworkinfo(const Array& params, bool fHelp)
     obj.push_back(Pair("localaddresses", localAddresses));
     return obj;
 }
+
+Value clearbanned(const Array& params, bool fHelp)
+{
+    if (fHelp || params.size() > 0)
+        throw runtime_error(
+            "clearbanned\n"
+            "\nClear the banned peer\n"
+            "\nExamples:\n" +
+            HelpExampleCli("clearbanned", "") + HelpExampleRpc("clearbanned", ""));
+
+    CNode::ClearBanned();
+    
+    return Value::null;
+}
