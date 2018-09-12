@@ -810,7 +810,7 @@ void CMasternodeMan::ProcessMessage(CNode* pfrom, std::string& strCommand, CData
                 std::map<CNetAddr, int64_t>::iterator i = mAskedUsForMasternodeList.find(pfrom->addr);
                 if (i != mAskedUsForMasternodeList.end()) {
                     int64_t t = (*i).second;
-                    if (GetTime() < t &&  && chainActive.Height() > 1000) {
+                    if (GetTime() < t && chainActive.Height() > 1000) {
                         Misbehaving(pfrom->GetId(), 34);
                         LogPrint("masternode","dseg - peer already asked me for the list\n");
                         return;
