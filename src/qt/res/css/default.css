@@ -1136,7 +1136,7 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:14px;
 font-weight:bold;
 color:#fff;
-margin-left:0px;
+margin-left:20px;
 }
 
 QWidget .QFrame#frame_3 .QLabel#labelzBalanceTextz { /* Available zBLAST Label */
@@ -1156,7 +1156,7 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:14px;
 font-weight:bold;
 color:#fff;
-margin-left:0px;
+margin-left:20px;
 }
 
 QWidget .QFrame#frame_3 .QLabel#labelLockedBalanceText { /* Available zBLAST Label */
@@ -1176,7 +1176,7 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:14px;
 font-weight:bold;
 color:#fff;
-margin-left:0px;
+margin-left:20px;
 }
 
 QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalanceText { /* Available zBLAST Label */
@@ -1196,7 +1196,7 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:14px;
 font-weight:bold;
 color:#fff;
-margin-left:0px;
+margin-left:20px;
 }
 
 QWidget .QFrame#frame_3 .QLabel#labelTotalTextz { /* Available total Label */
@@ -1216,7 +1216,7 @@ qproperty-alignment: 'AlignVCenter | AlignLeft';
 font-size:14px;
 font-weight:bold;
 color:#fff;
-margin-left:0px;
+margin-left:20px;
 }
 
 /**************************** RECENT TRANSACTIONS ***************************************/
