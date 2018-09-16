@@ -36,7 +36,7 @@ static const bool DEFAULT_SPLASHSCREEN = true;
 #define COLOR_BLACK QColor(0, 0, 0)
 #define COLOR_CYAN QColor(136, 199, 227)	// #88C7E3
 #define COLOR_YELLOW QColor(255, 255, 0)
-#define COLOR_GREE QColor(0, 255, 0)
+#define COLOR_GREEN QColor(0, 255, 0)
 
 /* Tooltips longer than this (in characters) are converted into rich text,
    so that they can be word-wrapped.
