@@ -33,7 +33,7 @@ static const bool DEFAULT_SPLASHSCREEN = true;
 /* Transaction list -- TX status decoration - offline */
 #define COLOR_TX_STATUS_OFFLINE QColor(255, 225, 225)
 /* Transaction list -- TX status decoration - default color */
-#define COLOR_BLACK QColor(255, 255, 255)
+#define COLOR_BLACK QColor(136, 199, 227)
 
 /* Tooltips longer than this (in characters) are converted into rich text,
    so that they can be word-wrapped.
