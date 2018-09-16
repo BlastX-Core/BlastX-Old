@@ -1219,6 +1219,14 @@ color:#fff;
 margin-left:20px;
 }
 
+QWidget .QFrame#frame_3 .QLabel#labelBLASTPercent { /* Current percentage of BLAST */
+color:#88c7e3;
+}
+
+QWidget .QFrame#frame_3 .QLabel#labelzBLASTPercent { /* Current percentage of zBLAST */
+color:#88c7e3;
+}
+
 /**************************** RECENT TRANSACTIONS ***************************************/
 
 QWidget .QFrame#frame_2 { /* Transactions Widget */
