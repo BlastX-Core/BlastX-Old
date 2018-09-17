@@ -1153,6 +1153,7 @@ font-size:14px;
 
 QWidget .QFrame#frame_3 .QLabel#labelzBalancez { /* Available zBLAST Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
+min-width:180px;
 font-size:14px;
 font-weight:bold;
 color:#fff;
@@ -1173,6 +1174,7 @@ font-size:14px;
 
 QWidget .QFrame#frame_3 .QLabel#labelLockedBalance { /* Available zBLAST Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
+min-width:180px;
 font-size:14px;
 font-weight:bold;
 color:#fff;
@@ -1193,6 +1195,7 @@ font-size:14px;
 
 QWidget .QFrame#frame_3 .QLabel#labelUnLockedBalance { /* Available zBLAST Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
+min-width:180px;
 font-size:14px;
 font-weight:bold;
 color:#fff;
@@ -1213,6 +1216,7 @@ font-size:14px;
 
 QWidget .QFrame#frame_3 .QLabel#labelTotalz { /* Available total Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
+min-width:180px;
 font-size:14px;
 font-weight:bold;
 color:#fff;
@@ -1702,7 +1706,7 @@ QLabel#transactionSumLabel { /* Example of setObjectName for widgets without nam
 color:#333333;
 font-weight:bold;
 }
- 
+
 QLabel#transactionSum { /* Example of setObjectName for widgets without name */
 color:#333333;
 }

@@ -41,9 +41,16 @@ TransactionView::TransactionView(QWidget* parent) : QWidget(parent), model(0), t
     QSettings settings;
     // Build filter row
     setContentsMargins(0, 0, 0, 0);
+    setStyleSheet("background-image: url(':/images/walletFrame_bg');"
+                  "QTableViedw {background-color: transparent;}"
+                  "QTableWidget {background-color: transparent;}"
+                  "QHeaderView::section {background-color: transparent;}"
+                  "QHeaderView {background-color: transparent;}"
+                  "QTableCornerButton::section {background-color: transparent;}");
 
     QHBoxLayout* hlayout = new QHBoxLayout();
     hlayout->setContentsMargins(0, 0, 0, 0);
+
 #ifdef Q_OS_MAC
     hlayout->setSpacing(5);
     hlayout->addSpacing(26);
@@ -143,7 +150,6 @@ TransactionView::TransactionView(QWidget* parent) : QWidget(parent), model(0), t
     view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
     view->setTabKeyNavigation(false);
     view->setContextMenuPolicy(Qt::CustomContextMenu);
-
     view->installEventFilter(this);
 
     transactionView = view;
@@ -377,7 +383,7 @@ void TransactionView::exportClicked()
     if (fExport) {
         emit message(tr("Exporting Successful"), tr("The transaction history was successfully saved to %1.").arg(filename),
                      CClientUIInterface::MSG_INFORMATION);
-    } 
+    }
     else {
         emit message(tr("Exporting Failed"), tr("There was an error trying to save the transaction history to %1.").arg(filename),
                      CClientUIInterface::MSG_ERROR);
