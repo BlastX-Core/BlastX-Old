@@ -1133,6 +1133,7 @@ font-size:14px;
 
 QWidget .QFrame#frame_3 .QLabel#labelBalancez { /* Available BLAST Balance */
 qproperty-alignment: 'AlignVCenter | AlignLeft';
+min-width:200px;
 font-size:14px;
 font-weight:bold;
 color:#fff;
