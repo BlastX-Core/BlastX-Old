@@ -2154,15 +2154,10 @@ CAmount GetBlockValue(int nHeight)
 
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
-    int64_t ret = 0;
-
-    if (nHeight < 100) {
-        ret = blockValue * 0;
-    } else {
-        ret = blockValue * 2 / 3;
-    }
-
-    return ret;
+    if (nHeight < Params().LAST_POW_BLOCK() || blockValue == 0)
+        return 0;
+	
+    return (blockValue * (2.0 / 3.0));
 }
 
 bool IsTreasuryBlock(int nHeight)
