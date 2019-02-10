@@ -2127,23 +2127,19 @@ CAmount GetBlockValue(int nHeight)
 		nSubsidy = GetTreasuryAward(nHeight);
 	} else {
 		if (nHeight == 0) {
-			nSubsidy = 500000 * COIN;
+			nSubsidy = 1000000 * COIN;
 		} else if (nHeight < 2000 && nHeight > 0) {
-			nSubsidy = 3 * COIN;
+			nSubsidy = 0 * COIN;
 		} else if (nHeight < 23600 && nHeight >= 2000) {
-			nSubsidy = 60 * COIN;
-		} else if (nHeight < 300000 && nHeight >= 23600) {
-			nSubsidy = 30 * COIN;
-		} else if (nHeight < 1000000 && nHeight >= 300000) {
-			nSubsidy = 15 * COIN;
-		} else if (nHeight < 2000000 && nHeight >= 1000000) {
 			nSubsidy = 9 * COIN;
-		} else if (nHeight < 3000000 && nHeight >= 2000000) {
+		} else if (nHeight < 300000 && nHeight >= 23600) {
 			nSubsidy = 6 * COIN;
-		} else if (nHeight < 4000000 && nHeight >= 3000000) {
+		} else if (nHeight < 1000000 && nHeight >= 300000) {
 			nSubsidy = 3 * COIN;
-		} else if (nHeight >= 4000000) {
-			nSubsidy = 3 * COIN;
+		} else if (nHeight < 2000000 && nHeight >= 1000000) {
+			nSubsidy = 1 * COIN;
+		} else if (nHeight >= 2000000) {
+			nSubsidy = 1 * COIN;
 		} else {
 			nSubsidy = 0 * COIN;
 		}
@@ -2176,7 +2172,7 @@ CAmount GetTreasuryAward(int nHeight)
 	if(IsTreasuryBlock(nHeight)) 
 	{
 		if(nHeight == nStartTreasuryBlock)
-			return 200010 * COIN; // 200,000 for the first treasury block, 10 - reward to PoS
+			return 20010 * COIN; // 200,000 for the first treasury block, 10 - reward to PoS
 		else
 			return 10010 * COIN;  // 10,000 for each next block, 10 - reward to Pos
 	} 
